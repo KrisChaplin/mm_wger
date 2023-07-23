@@ -12,7 +12,7 @@
 {% endblock %}
 
 {% block opengraphimages %}
-    <meta property="og:image" content="{% static 'images/logos/logo-font.svg' %}">
+    <meta property="og:image" content="{% static 'images/logos/mm/base_logo_transparent_background_125.png' %}">
 {% endblock %}
 
 
@@ -27,7 +27,7 @@
         <nav class="navbar navbar-expand-lg px-4">
             <div class="container-xl">
                 <a class="navbar-brand" href="{% url 'core:index' %}">
-                    <img src="{% static 'images/logos/logo-font.svg' %}" alt="wger logo"/>
+                    <img src="{% static 'images/logos/mm/base_logo_transparent_background_125.png' %}" alt="wger logo"/>
                 </a>
                 <button class="navbar-toggler"
                         type="button"
@@ -44,6 +44,7 @@
                             <a class="nav-link active fw-bolder" aria-current="page"
                                href="{% url 'software:about-us' %}">{% translate "About" %}    </a>
                         </li>
+<!--
                         <li class="nav-item mx-2 my-1">
                             <a class="nav-link fw-semibold"
                                href="https://play.google.com/store/apps/details?id=de.wger.flutter">
@@ -66,6 +67,7 @@
                                 {% translate "Community" %}
                             </a>
                         </li>
+-->
                     </ul>
                     <!-- buttons -->
                     {% if not user.is_authenticated %}
@@ -91,16 +93,16 @@
             <section
                 class="row px-3 mb-5 d-flex align-items-center justify-content-center gap-2 flex-row-reverse">
                 <div class="col-lg-7 col-sm-6 col-12 d-flex px-5 flex-column align-items-center">
-                    <img src="{% static 'images/hero.png' %}"
+                    <img src="{% static 'images/logos/mm/nick.png' %}"
                          alt="a man with a dumbbell"
                          class="header-hero-image">
                 </div>
                 <div class="col-lg-3 col-sm-5 col-11 d-flex py-3 flex-column align-items-start">
                     <h1 class="font-bebas-neue display-3 uppercase">
-                        {% translate "Track your <br> way to your <br> ideal body" %}
+                        {% translate "Strength Training plans<br>For Runners" %}
                     </h1>
                     <p>
-                        {% translate "Join wger, the community-driven <b>free and open-source fitness tracker</b>" %}
+                        {% translate "Many people miss out on the benefits of a personal trainer because of the prices... a single session can cost £30-50, over the course of a month that can be north of £300. My app has programs designed to help you stay injury-free, run strong in your races and be a better runner–all at a fraction of the cost of a personal trainer!" %}
                     </p>
 
                     <a role="button"
@@ -108,7 +110,7 @@
                        href="{% if user.is_authenticated %}
                                 {% url 'core:index' %}
                             {% else %}
-                                {% url 'core:user:login' %}
+                                https://www.maximummileagecoaching.com/strength-training-plan-for-runners
                             {% endif %}">
                         {% translate "Get Started" %}
                     </a>
@@ -116,7 +118,7 @@
                 </div>
             </section>
 
-            <!-- board section -->
+            <!-- board section
             <section class="row">
                 <div class="col-6 col-md-3 d-flex flex-column align-items-center">
                     <h2 class="display-3 font-bebas-neue text-dark-blue mb-0">{{ nr_users }}+</h2>
@@ -137,7 +139,7 @@
             </section>
         </div>
     </header>
-
+-->
     <!-- main content -->
     <main>
         <div class="container-xl">
@@ -254,7 +256,7 @@
 
         </div>
 
-        <!-- button -->
+        <!-- button
         <div class="row w-100 p-5 d-flex justify-content-center">
             <a role="button"
                class="btn btn-primary rounded-1 bg-dark-blue w-auto px-5"
@@ -267,7 +269,7 @@
             </a>
         </div>
 
-        <!-- community section -->
+        <!-- community section 
         <section class="main-section p-4 bg-light-blue">
             <div class="container-xl">
                 <div class="row w-100 gy-3">
@@ -317,11 +319,11 @@
             </div>
         </section>
 
-        <!-- sign up section -->
+        <!-- sign up section
         <section class="main-section  ">
             <div class="container d-flex align-items-center justify-content-center sign-up-bg">
 
-                <!-- form -->
+                <!-- form 
                 <form method="post"
                       action="{% url 'core:user:registration' %}"
                       class="row justify-content-center">
@@ -336,7 +338,7 @@
             </div>
         </section>
 
-        <!-- not enough section  -->
+        <!-- not enough section 
         <section class="bg-bottom-menu p-5">
             <div class="container-xl">
                 <h1 class="w-100 display-4 text-white text-center text-uppercase heading-h6 py-4">
@@ -402,7 +404,7 @@
     <footer class="d-grid gap-3 p-5 footer-bg">
         <div class="container-xl">
             <div class="d-flex pb-4">
-                <img src="{% static 'images/logos/logo-font-inverse.svg' %}" alt="wger logo"/>
+                <img src="{% static 'images/logos/mm/base_logo_transparent_background_125.png' %}" alt="wger logo"/>
             </div>
             <div class="row row-cols-lg-4 row-cols-sm-1 g-2 border-bottom border-light pb-3">
                 <div class="col-lg-3 col-sm-6 col-12">
