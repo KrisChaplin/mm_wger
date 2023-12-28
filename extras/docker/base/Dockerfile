@@ -5,12 +5,12 @@
 # This dockerfile simply installs all common dependencies for the
 # other images and does not do anything on its own.
 #
-# docker build --tag wger/base .
+# docker build --tag racecoach/wgerbase .
 #
 
 FROM ubuntu:22.04
 
-LABEL maintainer="Roland Geider <roland@geider.net>"
+LABEL maintainer="Kris Chaplin <kristian.chaplin@gmail.com>"
 
 # Install dependencies
 ENV DEBIAN_FRONTEND=noninteractive

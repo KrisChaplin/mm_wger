@@ -2,22 +2,22 @@
 # A wger installation under apache with WSGI
 #
 # Note: you MUST build this image from the project's root!
-# docker build -f extras/docker/demo/Dockerfile --tag wger/demo .
+# docker build -f extras/docker/demo/Dockerfile --tag racecoach/wgerdemo .
 #
 # Please consult the documentation for usage
-# docker run -ti --name wger.demo --publish 8000:80 wger/demo
+# docker run -ti --name racecoach.demo --publish 8000:80 racecoach/wgerdemo
 #
 # To stop the container:
-# sudo docker container stop wger.demo
+# sudo docker container stop racecoach.demo
 #
 # To start again
-# sudo docker container start --attach wger.demo
+# sudo docker container start --attach racecoach.demo
 #
 
 ##########
 # Builder
 ##########
-FROM wger/base:latest as builder
+FROM racecoach/wgerbase:latest as builder
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt update \
@@ -43,8 +43,8 @@ RUN --mount=type=tmpfs,target=/root/.cargo pip3 wheel --no-cache-dir --wheel-dir
 ########
 # Final
 ########
-FROM wger/base:latest
-LABEL maintainer="Roland Geider <roland@geider.net>"
+FROM racecoach/wgerbase:latest
+LABEL maintainer="Kris Chaplin <kristian.chaplin@gmail.com>"
 
 ARG DOCKER_DIR=./extras/docker/demo
 EXPOSE 80
