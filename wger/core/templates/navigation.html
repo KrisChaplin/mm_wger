@@ -3,7 +3,7 @@
     <div class="container-fluid">
         <div class="container-lg" style="display: flex;">
             <a class="navbar-brand" href="{% url 'core:index' %}">
-                <img src="{% static 'images/logos/logo-bg-white.png' %}" style="width: 38px;" alt="wger logo">
+                <img src="{% static 'images/logos/mm/base_logo_transparent_background_125.png' %}" style="width: 38px;" alt="wger logo">
             </a>
             <button class="navbar-toggler"
                     type="button"
@@ -222,12 +222,13 @@
                             class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item"
+<!--                                <a class="dropdown-item"
                                    href="{% url 'software:about-us' %}">
                                     {% translate "About us" %}
                                 </a>
                             </li>
                             <li class="dropdown-divider"></li>
+-->
                             <li>
                                 <a class="dropdown-item"
                                    href="{% url 'software:api' %}">{% translate "REST API" %}</a>
@@ -272,19 +273,13 @@
                         <li class="dropdown nav-item">
                             <a href="#" class="dropdown-toggle nav-link text-white"
                                data-bs-toggle="dropdown">
-                                {% translate "Login" %} / {% translate "Register" %}
+                                {% translate "Login" %}
                                 <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="{% url 'core:user:login' %}">
                                         {% translate "Login" %}
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item"
-                                       href="{% url 'core:user:registration' %}">
-                                        {% translate "Register" %}
                                     </a>
                                 </li>
                                 <li>

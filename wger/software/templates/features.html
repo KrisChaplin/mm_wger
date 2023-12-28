@@ -39,7 +39,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!--                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item mx-2 my-1">
                             <a class="nav-link active fw-bolder" aria-current="page"
                                href="{% url 'software:about-us' %}">{% translate "About" %}    </a>
@@ -412,11 +412,13 @@
                         <li class="list-group-item bg-transparent border-0 text-light ps-0">
                             <h1 class="fs-5 text-white">{% translate "Account" %}</h1>
                         </li>
+<!--
                         <li class="list-group-item bg-transparent border-0 text-light fw-lighter ps-0">
                             <a href="{% url 'core:user:registration' %}">
                                 {% translate "Register" %}
                             </a>
                         </li>
+-->
                         <li class="list-group-item bg-transparent border-0 text-light fw-lighter ps-0">
                             <a href="{% url 'core:user:login' %}">
                                 {% translate "Login" %}
@@ -446,6 +448,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
                     <ul class="list-group">
+<!--
                         <li class="list-group-item bg-transparent border-0 text-light">
                             <h1 class="fs-5 text-white">{% translate "Community" %}</h1>
                         </li>
@@ -476,7 +479,7 @@
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
                     <ul class="list-group">
-                        <li class="list-group-item bg-transparent border-0 text-light">
+<!--                        <li class="list-group-item bg-transparent border-0 text-light">
                             <h1 class="fs-5 text-white">{% translate "Software" %}</h1>
                         </li>
                         <li class="list-group-item bg-transparent border-0 text-light">
@@ -507,6 +510,7 @@
                                 {% translate "Documentation" %}
                             </a>
                         </li>
+-->
                     </ul>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-12">
@@ -579,12 +583,13 @@
                         </li>
                     </ul>
                 </div>
-
+<!--
                 <a href="https://play.google.com/store/apps/details?id=de.wger.flutter">
                     <img src="{% static 'images/logos/play-store/google-play-badge.svg' %}"
                          alt="google play logo"
                          height="55"/>
                 </a>
+-->
             </div>
         </div>
     </footer>
